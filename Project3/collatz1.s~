@@ -1,0 +1,31 @@
+	.file	"collatz1.s"
+	.text
+	.globl	collatz1
+	.type	collatz1, @function
+
+collatz:
+
+	movl 8(%ebp), %esi
+        movl $0, %edi
+        movl $3, %ebx
+        cmpl %esi, $1
+        je   .L1
+.L3:
+	idivl %esi, $2
+        cmpl %edx, $0
+        je .L2
+        imul %ebx, %esi
+        incl %esi
+        cmpl %esi, $1
+        je .L1
+        jmp .L3
+	
+.L2:
+        movl %eax, %esi
+        cmpl %esi, $1
+        je   .L1
+        jmp  .L3    
+.L1:
+        movl %eax, %ebx
+	movl %edi, %eax
+

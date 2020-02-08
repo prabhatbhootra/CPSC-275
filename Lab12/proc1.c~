@@ -1,0 +1,9 @@
+//proc1.c
+
+#include <stdio.h>
+
+void main(){
+  printf("First\n");
+  fork();
+  printf("Second\n");
+}

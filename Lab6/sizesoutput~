@@ -1,0 +1,13 @@
+gcc -o output:
+
+Integer: 4
+Long Int: 8
+Float: 4
+Double: 8
+Short: 2
+Character: 1
+
+gcc -m32 output:
+
+Integer: 4Long Int: 4Float: 4Double: 8Short: 2Character: 1
+

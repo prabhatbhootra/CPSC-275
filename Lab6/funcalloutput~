@@ -1,0 +1,15 @@
+funcall ouput without a and b:
+
+num1:     0x7fff0826982c      11
+a1:     0x7fff08269834      10
+num1:     0x7fff0826982c      21
+num1:     0x7fff08269834      20
+
+funcall output with a and b:
+
+num1:     0x7ffe2210f76c      11
+a1:     0x7ffe2210f774      10
+num1:     0x7ffe2210f76c      21
+num1:     0x7ffe2210f774      20
+a:     0x7ffe2210f798      10
+b:     0x7ffe2210f79c      20

@@ -1,0 +1,8 @@
+//makeshift.c
+
+#include <stdio.h>
+#define max 100
+
+int[][] shift(int n, int a[][], int s, char c){
+  int r[max][max];
+  

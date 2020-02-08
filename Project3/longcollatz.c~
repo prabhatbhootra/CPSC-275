@@ -1,0 +1,25 @@
+//longcollatz.c
+
+#include <stdio.h>
+#include <stdlib.h>
+long long coll(long long n);
+
+void main (int argc, char *argv[]){
+  long long x = atoll(argv[1]);
+  printf("%llu \n", coll(x));    
+}
+
+long long coll(long long n){
+  long long k = 0;
+  while (n != 1){
+    if ((n%2) == 0){
+      n = n/2;
+      k++;
+    }
+    else{
+      n = 3*n + 1;
+      k++;
+    }
+  }
+  return k;
+}
